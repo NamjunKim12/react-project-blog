@@ -60,7 +60,7 @@ function App() {
       {
         글제목.map(function(글, i){
           return (
-          <div onClick={()=>{ 누른제목변경(i); 모달변경(!모달); } } className="list">
+          <div onClick={()=>{ 누른제목변경(i); 모달변경(!모달); } } className="list" key={i}>
             <h3>{ 글 }<span onClick={()=>{따봉변경( 따봉 + 1) } } >👍</span> { 따봉 }</h3>
             <p>2월 17일 발행</p>
             <hr/>
